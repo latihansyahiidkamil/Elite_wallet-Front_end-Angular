@@ -1,0 +1,21 @@
+<div class="container" style="margin-left: 22%;padding-right: 20%;margin-top: -45%">
+  <h1 class="text-center">Welcome To the Elite Wallet</h1>
+  <br>
+  <h3 class="text-center">Net Worth: XXX</h3>
+  <h3 class="text-center">Total Donation: XXX</h3>
+  <br>
+  <h3 class="text-center">Today Financial News</h3>
+  
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let news of news_list">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{news.image_url}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{news.title}}</h5>
+          <p class="card-text">{{news.text}}</p>
+          <a href="{{news.news_url}}" class="btn btn-primary">Go to the news</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

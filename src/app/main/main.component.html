@@ -1,0 +1,88 @@
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="page-wrapper chiller-theme toggled">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div id="toggle-sidebar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="sidebar-brand">
+                    <a class="text-center">Elite Wallet</a>
+                </div>
+                <div class="sidebar-header">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="{{img_src}}" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">{{full_name}}
+                        </span>
+                        <span class="user-role">{{email}}</span>
+                        <span class="user-status">
+                            <a href="#">
+                                <span>Profile</span>
+                            </a>
+                            <a routerLink="/login" (click)="logoutSubmit()">
+                                <span>&nbsp;&nbsp;&nbsp;Logout</span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-menu  -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Menu</span>
+                        </li>
+                        <li>
+                            <a routerLink="/main/home">
+                                <i class="fa fa-calendar"></i>
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/main/wallet">
+                                <i class="fa fa-folder"></i>
+                                <span>Wallet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/">
+                                <i class="fa fa-folder"></i>
+                                <span>Account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/">
+                                <i class="fa fa-book"></i>
+                                <span>Exchange</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/">
+                                <i class="fa fa-book"></i>
+                                <span>Invest</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/">
+                                <i class="fa fa-book"></i>
+                                <span>Donation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer">
+                <a>
+                </a>
+            </div>
+        </nav>       
+</div>

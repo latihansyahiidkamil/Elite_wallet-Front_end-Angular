@@ -3,9 +3,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { LoginComponent } from './BeforeLoginPage/login/login.component';
-import { IndexComponent } from './BeforeLoginPage/index/index.component';
-import { RegisterComponent } from './BeforeLoginPage/register/register.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MainComponent } from './main/main.component';
+import { BeforeLoginPageComponent } from './before-login-page/before-login-page.component';
+import { IndexComponent } from './before-login-page/index/index.component';
+import { LoginComponent } from './before-login-page/login/login.component';
+import { RegisterComponent } from './before-login-page/register/register.component';
+
+import { HomeComponent } from './main/home/home.component';
 
 
 @NgModule({
@@ -14,11 +21,17 @@ import { RegisterComponent } from './BeforeLoginPage/register/register.component
     
     IndexComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MainComponent,
+    BeforeLoginPageComponent,
+ 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
